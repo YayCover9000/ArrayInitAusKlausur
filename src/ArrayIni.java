@@ -24,13 +24,6 @@ public class ArrayIni {
                 //System.out.println("Ziffer als Int ausgabe: " + ArrayFirst[k]);
             }
 
-            for (int i = 0; i < ArrayFirst.length; i++) {
-                //ArrayFirst[i] = ziffer;
-                // ArrayFirst[i] = backToInt;
-                //System.out.println("Ziffer als Int ausgabe: " + ArrayFirst[i]);
-                for(int j = 0; j < ArrayFirst[i]; j++) {
-                }
-            }
             for (int e : ArrayFirst) {
                 System.out.println("Ziffer: " + e);
             }
