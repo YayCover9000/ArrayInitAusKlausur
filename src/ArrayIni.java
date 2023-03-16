@@ -1,7 +1,7 @@
 public class ArrayIni {
     public static void main (String [] args) {
-        int ziffer = 7;
-        int [] Array = new int[5];
+        int ziffer = 6;
+        int [] Array = new int[3];
         ArrayIni.ini(Array, ziffer);
     }
     public static void ini (int[] ArrayFirst, int ziffer) {
@@ -13,7 +13,8 @@ public class ArrayIni {
             int backToInt;
             System.out.println("Ziffer To String: " + zifferString);
             // Gibt Stzring plus Ziffer als String aus bis Array voll
-            for (int k = 0; k < ArrayFirst.length; k++) {
+            ArrayFirst[0] = ziffer;
+            for (int k = 1; k < ArrayFirst.length; k++) {
                 zwischen += zifferString;
                 //System.out.println("Zwischen: " + zwischen);
                 // casts String to Int
