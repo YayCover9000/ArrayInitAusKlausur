@@ -1,7 +1,9 @@
+import java.util.Scanner;
 public class ArrayIni {
     public static void main (String [] args) {
-        int ziffer = 6;
-        int [] Array = new int[3];
+        Scanner scanner = new Scanner(System.in);
+        int ziffer = scanner.nextInt();
+        int [] Array = new int[5];
         ArrayIni.ini(Array, ziffer);
     }
     public static void ini (int[] ArrayFirst, int ziffer) {
@@ -11,7 +13,7 @@ public class ArrayIni {
             String zwischen = Integer.toString(ziffer);
             String zifferString = Integer.toString(ziffer);
             int backToInt;
-            System.out.println("Ziffer To String: " + zifferString);
+            //System.out.println("Ziffer To String: " + zifferString);
             // Gibt Stzring plus Ziffer als String aus bis Array voll
             ArrayFirst[0] = ziffer;
             for (int k = 1; k < ArrayFirst.length; k++) {
@@ -28,7 +30,7 @@ public class ArrayIni {
                 System.out.println("Ziffer: " + e);
             }
         } else {
-            System.out.println("LEER");
+            System.out.println("Falsche Eingabe");
         }
     }
 }
